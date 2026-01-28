@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="config" target="17" />
+      <module name="config.main" target="17" />
+      <module name="config.test" target="17" />
+      <module name="gateway" target="17" />
+      <module name="gateway.main" target="17" />
+      <module name="gateway.test" target="17" />
+      <module name="media" target="17" />
+      <module name="media.main" target="17" />
+      <module name="media.test" target="17" />
+      <module name="reaction" target="17" />
+      <module name="reaction.main" target="17" />
+      <module name="reaction.test" target="17" />
+      <module name="thread" target="17" />
+      <module name="thread.main" target="17" />
+      <module name="thread.test" target="17" />
+      <module name="threads_backend.config" target="17" />
+      <module name="threads_backend.config.main" target="17" />
+      <module name="threads_backend.config.test" target="17" />
+      <module name="threads_backend.gateway" target="17" />
+      <module name="threads_backend.gateway.main" target="17" />
+      <module name="threads_backend.gateway.test" target="17" />
+      <module name="threads_backend.media" target="17" />
+      <module name="threads_backend.media.main" target="17" />
+      <module name="threads_backend.media.test" target="17" />
+      <module name="threads_backend.reaction" target="17" />
+      <module name="threads_backend.reaction.main" target="17" />
+      <module name="threads_backend.reaction.test" target="17" />
+      <module name="threads_backend.thread" target="17" />
+      <module name="threads_backend.thread.main" target="17" />
+      <module name="threads_backend.thread.test" target="17" />
+      <module name="threads_backend.user" target="17" />
+      <module name="threads_backend.user.main" target="17" />
+      <module name="threads_backend.user.test" target="17" />
+      <module name="user" target="17" />
+      <module name="user.main" target="17" />
+      <module name="user.test" target="17" />
+      <module name="uz.media.main" target="17" />
+      <module name="uz.media.test" target="17" />
+      <module name="uz.reaction.main" target="17" />
+      <module name="uz.reaction.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config" options="-parameters" />
+      <module name="config.main" options="-parameters" />
+      <module name="config.test" options="-parameters" />
+      <module name="gateway" options="-parameters" />
+      <module name="gateway.main" options="-parameters" />
+      <module name="gateway.test" options="-parameters" />
+      <module name="media" options="-parameters" />
+      <module name="media.main" options="-parameters" />
+      <module name="media.test" options="-parameters" />
+      <module name="reaction" options="-parameters" />
+      <module name="reaction.main" options="-parameters" />
+      <module name="reaction.test" options="-parameters" />
+      <module name="thread" options="-parameters" />
+      <module name="thread.main" options="-parameters" />
+      <module name="thread.test" options="-parameters" />
+      <module name="threads_backend.config" options="-parameters" />
+      <module name="threads_backend.config.main" options="-parameters" />
+      <module name="threads_backend.config.test" options="-parameters" />
+      <module name="threads_backend.gateway" options="-parameters" />
+      <module name="threads_backend.gateway.main" options="-parameters" />
+      <module name="threads_backend.gateway.test" options="-parameters" />
+      <module name="threads_backend.media" options="-parameters" />
+      <module name="threads_backend.media.main" options="-parameters" />
+      <module name="threads_backend.media.test" options="-parameters" />
+      <module name="threads_backend.reaction" options="-parameters" />
+      <module name="threads_backend.reaction.main" options="-parameters" />
+      <module name="threads_backend.reaction.test" options="-parameters" />
+      <module name="threads_backend.thread" options="-parameters" />
+      <module name="threads_backend.thread.main" options="-parameters" />
+      <module name="threads_backend.thread.test" options="-parameters" />
+      <module name="threads_backend.user" options="-parameters" />
+      <module name="threads_backend.user.main" options="-parameters" />
+      <module name="threads_backend.user.test" options="-parameters" />
+      <module name="user" options="-parameters" />
+      <module name="user.main" options="-parameters" />
+      <module name="user.test" options="-parameters" />
+      <module name="uz.media.main" options="-parameters" />
+      <module name="uz.media.test" options="-parameters" />
+      <module name="uz.reaction.main" options="-parameters" />
+      <module name="uz.reaction.test" options="-parameters" />
+    </option>
+  </component>
+</project>

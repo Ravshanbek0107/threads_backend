@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config.iml" filepath="$PROJECT_DIR$/.idea/modules/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway.main.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway.test.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/media.iml" filepath="$PROJECT_DIR$/.idea/modules/media.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/media.main.iml" filepath="$PROJECT_DIR$/.idea/modules/media.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/media.test.iml" filepath="$PROJECT_DIR$/.idea/modules/media.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reaction.iml" filepath="$PROJECT_DIR$/.idea/modules/reaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reaction.main.iml" filepath="$PROJECT_DIR$/.idea/modules/reaction.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reaction.test.iml" filepath="$PROJECT_DIR$/.idea/modules/reaction.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thread.iml" filepath="$PROJECT_DIR$/.idea/modules/thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thread.main.iml" filepath="$PROJECT_DIR$/.idea/modules/thread.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thread.test.iml" filepath="$PROJECT_DIR$/.idea/modules/thread.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/threads_backend.iml" filepath="$PROJECT_DIR$/.idea/modules/threads_backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config/threads_backend.config.iml" filepath="$PROJECT_DIR$/.idea/modules/config/threads_backend.config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config/threads_backend.config.main.iml" filepath="$PROJECT_DIR$/.idea/modules/config/threads_backend.config.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/config/threads_backend.config.test.iml" filepath="$PROJECT_DIR$/.idea/modules/config/threads_backend.config.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway/threads_backend.gateway.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway/threads_backend.gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway/threads_backend.gateway.main.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway/threads_backend.gateway.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gateway/threads_backend.gateway.test.iml" filepath="$PROJECT_DIR$/.idea/modules/gateway/threads_backend.gateway.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thread/threads_backend.thread.iml" filepath="$PROJECT_DIR$/.idea/modules/thread/threads_backend.thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thread/threads_backend.thread.main.iml" filepath="$PROJECT_DIR$/.idea/modules/thread/threads_backend.thread.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/thread/threads_backend.thread.test.iml" filepath="$PROJECT_DIR$/.idea/modules/thread/threads_backend.thread.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user/threads_backend.user.iml" filepath="$PROJECT_DIR$/.idea/modules/user/threads_backend.user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user/threads_backend.user.main.iml" filepath="$PROJECT_DIR$/.idea/modules/user/threads_backend.user.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user/threads_backend.user.test.iml" filepath="$PROJECT_DIR$/.idea/modules/user/threads_backend.user.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/user.iml" filepath="$PROJECT_DIR$/.idea/modules/user.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uz.media.main.iml" filepath="$PROJECT_DIR$/.idea/modules/uz.media.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uz.media.test.iml" filepath="$PROJECT_DIR$/.idea/modules/uz.media.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uz.reaction.main.iml" filepath="$PROJECT_DIR$/.idea/modules/uz.reaction.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/uz.reaction.test.iml" filepath="$PROJECT_DIR$/.idea/modules/uz.reaction.test.iml" />
+    </modules>
+  </component>
+</project>

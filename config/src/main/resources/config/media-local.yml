@@ -1,0 +1,23 @@
+server:
+  port: ${services.ports.media}
+spring:
+  application:
+    name: media
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/thread_db
+    username: postgres
+    password: 1
+
+  jpa:
+    properties:
+      hibernate:
+        default_schema: media
+
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
+
+media:
+  upload: uploads

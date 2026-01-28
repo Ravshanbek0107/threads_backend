@@ -1,0 +1,13 @@
+services:
+  hosts:
+    media: http://localhost:8184
+    reaction: http://localhost:8185
+    gateway: http://localhost:7777
+    user: http://localhost:8182
+    thread: http://localhost:8183
+  ports:
+    media: 8184
+    gateway: 7777
+    user: 8182
+    thread: 8183
+    reaction: 8185
