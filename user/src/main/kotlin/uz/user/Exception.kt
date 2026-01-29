@@ -14,11 +14,6 @@ class ExceptionHandler(
     @ExceptionHandler(Throwable::class)
     fun handleOtherExceptions(exception: Throwable): ResponseEntity<Any> {
         when (exception) {
-            is FeignException -> {
-                return ResponseEntity
-                    .badRequest()
-                    .body(exception.toBaseMessage())
-            }
 
             is UserException-> {
 
@@ -81,16 +76,5 @@ class FollowNotFoundException : UserException() {
     override fun errorType() = ErrorCode.FOLLOW_NOT_FOUND
 }
 
-
-class FeignException(
-    private val code: Int?,
-    private val messageValue: String?
-) :UserException() {
-
-    override fun errorType() = ErrorCode.FEIGN_ERROR
-
-    fun toBaseMessage() = BaseMessage(code, messageValue)
-
-}
 
 

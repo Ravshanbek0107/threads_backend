@@ -57,11 +57,16 @@ class ReactionServiceImpl(
     override fun stats(threadId: Long): ReactionStatsResponse {
 
         val stat = statRepository.findByThreadId(threadId) ?: throw StatNotFoundException()
+        println("============================================")
+        println("============================================")
 
-        return ReactionStatsResponse(
-            threadId = threadId,
-            likeCount = stat.likeCount,
-            viewCount = stat.viewCount
-        )
+        println(stat.likeCount)
+        println(stat.viewCount)
+        println(stat.threadId)
+
+        println("============================================")
+        println("============================================")
+
+        return ReactionStatsResponse.toResponse(stat)
     }
 }

@@ -1,9 +1,11 @@
 package uz.media
 
 import org.springframework.beans.factory.annotation.Value
+import org.springframework.core.io.FileSystemResource
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 import org.springframework.web.multipart.MultipartFile
+import java.io.File
 import java.nio.file.Files
 import java.nio.file.Path
 import java.util.UUID
@@ -16,6 +18,8 @@ interface MediaService {
     fun setThreadId(request: MediaAttachRequest)
 
     fun getByHashIds(hashIds: List<Long>): List<MediaDto>
+
+    fun loadFile(hashId: Long): MediaDownloadResponse
 }
 
 @Service
@@ -60,7 +64,6 @@ class MediaServiceImpl(
                 contentType = file.contentType,
                 size = file.size,
                 path = path.toString(),
-
             )
 
             mediaRepository.save(media)
@@ -122,8 +125,27 @@ class MediaServiceImpl(
             .findAllByHashIdIn(hashIds).map {
                 MediaDto(
                     hashId = it.hashId,
-                    url = "/api/v1/media/${it.hashId}"
+                    url = "/api/v1/media/download/${it.hashId}",
+                    type = it.contentType,
+                    duration = it.videoDuration
                 )
             }
     }
+
+    override fun loadFile(hashId: Long): MediaDownloadResponse {
+
+        val media = mediaRepository.findByHashId(hashId) ?: throw MediaNotFoundException()
+
+        val file = File(media.path)
+
+        if (!file.exists()) throw MediaFileNotFoundException()
+
+
+        return MediaDownloadResponse(
+            resource = FileSystemResource(file),
+            fileName = file.name,
+            contentType = media.contentType
+        )
+    }
+
 }

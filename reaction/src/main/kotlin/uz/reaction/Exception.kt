@@ -14,12 +14,6 @@ class ExceptionHandler(
     @ExceptionHandler(Throwable::class)
     fun handleOtherExceptions(exception: Throwable): ResponseEntity<Any> {
         when (exception) {
-            is FeignException -> {
-                return ResponseEntity
-                    .badRequest()
-                    .body(exception.toBaseMessage())
-            }
-
             is ReactionException-> {
 
                 return ResponseEntity
@@ -65,15 +59,6 @@ class StatNotFoundException : ReactionException() {
 
 
 
-class FeignException(
-    private val code: Int?,
-    private val messageValue: String?
-) :ReactionException() {
 
-    override fun errorType() = ErrorCode.FEIGN_ERROR
-
-    fun toBaseMessage() = BaseMessage(code, messageValue)
-
-}
 
 

@@ -19,5 +19,10 @@ spring:
 
     show-sql: true
 
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+
 media:
-  upload: uploads
+  upload: C:\Users\99891\IdeaProjects\threads_backend\media\uploads

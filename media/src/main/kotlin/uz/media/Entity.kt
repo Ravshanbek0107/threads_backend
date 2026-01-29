@@ -39,11 +39,13 @@ class Media(
 
     @Column(nullable = false) var originalName: String,
 
-    @Column(nullable = false) var contentType: String?,
+    var contentType: String?,
 
     @Column(nullable = false) var size: Long,
 
     @Column(nullable = false) var path: String,
+
+    var videoDuration: Long? = null,
 
     var ownerId: Long? = null,
 

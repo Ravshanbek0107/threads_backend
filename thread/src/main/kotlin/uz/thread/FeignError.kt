@@ -4,7 +4,9 @@ import com.fasterxml.jackson.databind.ObjectMapper
 import feign.FeignException
 import feign.Response
 import feign.codec.ErrorDecoder
+import org.springframework.stereotype.Component
 
+@Component
 class CustomFeignErrorDecoder(
     private val objectMapper: ObjectMapper = ObjectMapper()
 ) : ErrorDecoder {

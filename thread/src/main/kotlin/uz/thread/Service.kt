@@ -92,6 +92,7 @@ class ThreadServiceImpl(
         return threadRepository.findAllByDeletedFalseAndStatus(ThreadStatus.ACTIVE, pageable).map{
             buildResponse(it)
         }
+        // shu yerda replylarni qaytarmasligim kerak edi
     }
 
     override fun getReplies(threadId: Long, pageable: Pageable): Page<ThreadResponse> {
@@ -99,7 +100,8 @@ class ThreadServiceImpl(
         val parent = threadRepository.findByIdAndDeletedFalseAndStatus(threadId, ThreadStatus.ACTIVE)
             ?: throw ThreadNotFoundException()
 
-        return threadRepository.findAllByParentThreadAndDeletedFalseAndStatus(parent, ThreadStatus.ACTIVE, pageable)
+        return threadRepository.findAllByParentThreadAndDeletedFalseAndStatusAndType(
+            parent, ThreadStatus.ACTIVE, ThreadType.REPLY, pageable)
             .map{
                 buildResponse(it)
             }
@@ -115,7 +117,31 @@ class ThreadServiceImpl(
         thread.deleted = true
 
         threadRepository.save(thread)
+
+
+
+
+
+
+
+
+
         //keyin like view delete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 
@@ -136,6 +162,7 @@ class ThreadServiceImpl(
             id = thread.id!!,
             authorId = thread.authorId,
             type = thread.type,
+            parentThreadId = thread.parentThread?.id,
             content = thread.content,
             createdDate = thread.createdDate,
             media = media,

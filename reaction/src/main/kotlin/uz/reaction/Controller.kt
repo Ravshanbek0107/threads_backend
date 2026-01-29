@@ -14,9 +14,9 @@ class ReactionController(
 ) {
 
 
-    @PostMapping("/like/{threadId}")
-    fun toggleLike(@PathVariable threadId: Long, @RequestBody request: LikeRequest) {
-        reactionService.LikeOrUnlike(threadId, request.userId)
+    @PostMapping("/like")
+    fun toggleLike(@RequestBody request: LikeRequest) {
+        reactionService.LikeOrUnlike(request.threadId,request.userId)
     }
 
 
@@ -25,7 +25,7 @@ class ReactionController(
         reactionService.view(threadId)
     }
 
-    @GetMapping("internal/thread/{threadId}")
+    @GetMapping("/internal/thread/{threadId}")
     fun stats(@PathVariable threadId: Long): ReactionStatsResponse {
         return reactionService.stats(threadId)
     }

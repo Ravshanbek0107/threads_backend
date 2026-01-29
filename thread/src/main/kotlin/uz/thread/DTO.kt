@@ -21,23 +21,23 @@ data class ThreadResponse(
     val id: Long,
     val authorId: Long,
     val type: ThreadType,
+    val parentThreadId: Long? = null,
     val content: String?,
     val createdDate: Date?,
     val media: List<MediaDto>?,
-    val reactions: ReactionDto
+    val reactions: ReactionStatsResponse
 )
 
 data class MediaDto(
     val hashId: Long,
     val url: String,
-    val type: String,
-    val duration: Int? = null
+    val type: String? = null,// file type
+    val duration: Int? = null // video bolsa davom etishi
 )
 
-data class ReactionDto(
-    val likes: Long,
-    val views: Long,
-    val shares: Long
+data class ReactionStatsResponse(
+    val likeCount: Long,
+    val viewCount: Long
 )
 
 data class UserDto(

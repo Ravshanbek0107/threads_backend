@@ -50,7 +50,8 @@ interface ThreadRepository : BaseRepository<Thread> {
 
     fun findAllByDeletedFalseAndStatus(status: ThreadStatus, pageable: Pageable): Page<Thread>
 
-    fun findAllByParentThreadAndDeletedFalseAndStatus(parentThread: Thread, status: ThreadStatus, pageable: Pageable): Page<Thread>
+    fun findAllByParentThreadAndDeletedFalseAndStatusAndType(
+        parentThread: Thread, status: ThreadStatus,type: ThreadType, pageable: Pageable): Page<Thread>
 }
 
 @Repository

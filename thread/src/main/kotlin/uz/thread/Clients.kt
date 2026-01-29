@@ -17,21 +17,21 @@ interface UserFeignClient {
 @FeignClient(name = "media", url = "\${services.hosts.media}")
 interface MediaFeignClient {
 
-    @PostMapping("/internal/set-thread")
+    @PostMapping("/api/v1/media/internal/set-thread")
     fun setThreadId(@RequestBody request: MediaAttachRequest)
 
-    @PostMapping("/internal/get-images")
+    @PostMapping("/api/v1/media/internal/get-images")
     fun getImagesByHashId(@RequestBody ids: List<Long>): List<MediaDto>
 }
 
 @FeignClient(name = "reaction", url = "\${services.hosts.reaction}")
 interface ReactionFeignClient {
 
-    @PostMapping("/internal/init/{threadId}")
+    @PostMapping("/api/v1/reaction/internal/init/{threadId}")
     fun init(@PathVariable threadId: Long)
 
-    @GetMapping("/internal/thread/{threadId}")
-    fun stats(@PathVariable threadId: Long): ReactionDto
+    @GetMapping("/api/v1/reaction/internal/thread/{threadId}")
+    fun stats(@PathVariable threadId: Long): ReactionStatsResponse
 }
 
 

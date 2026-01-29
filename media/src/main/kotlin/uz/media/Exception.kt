@@ -14,11 +14,6 @@ class ExceptionHandler(
     @ExceptionHandler(Throwable::class)
     fun handleOtherExceptions(exception: Throwable): ResponseEntity<Any> {
         when (exception) {
-            is FeignException -> {
-                return ResponseEntity
-                    .badRequest()
-                    .body(exception.toBaseMessage())
-            }
 
             is MediaException-> {
 
@@ -65,19 +60,17 @@ class MediaSizeTooLargeException : MediaException() {
     override fun errorType() = ErrorCode.MEDIA_SIZE_TOO_LARGE
 }
 
-
-
-
-
-class FeignException(
-    private val code: Int?,
-    private val messageValue: String?
-) :MediaException() {
-
-    override fun errorType() = ErrorCode.FEIGN_ERROR
-
-    fun toBaseMessage() = BaseMessage(code, messageValue)
-
+class MediaNotFoundException : MediaException() {
+    override fun errorType() = ErrorCode.MEDIA_NOT_FOUND
 }
+
+class MediaFileNotFoundException : MediaException() {
+    override fun errorType() = ErrorCode.MEDIA_FILE_NOT_FOUND
+}
+
+
+
+
+
 
 
