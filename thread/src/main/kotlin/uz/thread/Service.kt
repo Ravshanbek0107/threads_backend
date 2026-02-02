@@ -24,7 +24,6 @@ interface ThreadService {
 class ThreadServiceImpl(
     private val threadRepository: ThreadRepository,
     private val threadMediaRepository: ThreadMediaRepository,
-    private val userFeignClient: UserFeignClient,
     private val mediaFeignClient: MediaFeignClient,
     private val reactionFeignClient: ReactionFeignClient,
 ) : ThreadService {
@@ -109,6 +108,8 @@ class ThreadServiceImpl(
 
     @Transactional
     override fun delete(id: Long) {
+
+        //TODO egasiga tekshirish
 
         val thread = threadRepository.findByIdAndDeletedFalseAndStatus(id, ThreadStatus.ACTIVE)
             ?: throw ThreadNotFoundException()

@@ -5,290 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7ad47851-ef08-4b40-aac9-ee7aa73c9c5b" name="Changes" comment="fixed">
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/AuthApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/components/AuthServerAuthenticationConverter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/components/AuthServerAuthenticationProvider.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/components/JwtAuthenticationConverter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/components/loaders/DevUserLoader.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/components/loaders/RegisteredClientLoader.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/configs/AuthorizationServerConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/configs/EntityAuditingConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/configs/JwtTokenConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/configs/UserSecurityConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/constants/Common.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/controllers/AuthInternalController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/controllers/UserController.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/entities/AuthAuthorization.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/entities/AuthClient.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/entities/BaseEntity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/entities/User.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/enums/AuthServerGrantType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/enums/ClientGrantType.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/enums/ErrorCode.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/enums/Role.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/enums/UserStatus.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/exceptions/DavrException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/exceptions/ExceptionControllerAdvice.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/extensions/Common.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/mappers/AuthClientMapper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/mappers/UserEntityMapper.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/requests/ClientAddRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/requests/ClientSecretUpdateRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/requests/ClientUpdateRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/requests/UserChangePasswordRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/requests/UserCreateRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/requests/UserUpdateRequest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/BaseMessage.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/ClientListResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/ClientOneResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/OnePermissionGroupResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/OnePermissionResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/OneRoleResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/PermissionGroupResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/PermissionGroupSimpleResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/PermissionResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/PermissionSelectResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/RoleResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/UserInfoResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/UserPermissionsResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/responses/UserResponse.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/security/AuthServerAuthenticationToken.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/model/security/CustomUserDetails.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/repositories/AuthAuthorizationRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/repositories/AuthClientRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/repositories/UserRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/services/UserService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/services/security/AuthServerProvider.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/services/security/JpaOAuth2AuthorizationService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/services/security/MongoOAuth2AuthorizationServiceImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/services/security/PasswordAuthServerProvider.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/services/security/RegisteredClientRepositoryImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/services/security/UserDetailsServiceImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/utils/Common.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/utils/SecurityUtils.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/utils/Validators.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/resources/keys/private_key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth/src/main/resources/keys/public_key.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/src/main/resources/config/auth-local.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/Clients.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/Config.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/Constants.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/Controller.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/DTO.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/Enum.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/Extensions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/FeignError.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/FeignOAuth2TokenConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/Repository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/Service.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/follow/src/main/resources/error.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/kotlin/uz/gateway/Components.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gateway/src/main/kotlin/uz/gateway/Configuration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/src/main/kotlin/uz/media/Constants.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/src/main/kotlin/uz/media/Extensions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reaction/src/main/kotlin/uz/reaction/Constants.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/reaction/src/main/kotlin/uz/reaction/Extensions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/Constants.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/Extensions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/FeignOAuth2TokenConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_classic_1_5_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__ch_qos_logback_logback_core_1_5_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_classmate_1_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_annotations_2_18_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_core_2_18_4_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_core_jackson_databind_2_18_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_18_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_18_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_18_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_fasterxml_jackson_module_jackson_module_parameter_names_2_18_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_googlecode_javaewah_JavaEWAH_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_sun_istack_istack_commons_runtime_4_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zaxxer_HikariCP_5_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_codec_commons_codec_1_17_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_fileupload_commons_fileupload_1_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__commons_logging_commons_logging_1_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_openfeign_feign_core_13_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_openfeign_feign_form_13_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_openfeign_feign_form_spring_13_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_github_openfeign_feign_slf4j_13_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_micrometer_micrometer_commons_1_14_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_micrometer_micrometer_observation_1_14_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_buffer_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_dns_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_http2_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_http_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_codec_socks_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_common_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_handler_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_handler_proxy_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_dns_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_dns_classes_macos_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_resolver_dns_native_macos_osx_x86_64_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_classes_epoll_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_netty_netty_transport_native_unix_common_4_1_122_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_addons_reactor_extra_3_5_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_kotlin_reactor_kotlin_extensions_1_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_netty_reactor_netty_core_1_2_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_netty_reactor_netty_http_1_2_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_projectreactor_reactor_core_3_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__io_smallrye_jandex_3_2_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_activation_jakarta_activation_api_2_1_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_annotation_jakarta_annotation_api_2_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_inject_jakarta_inject_api_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_persistence_jakarta_persistence_api_3_1_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_transaction_jakarta_transaction_api_2_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_validation_jakarta_validation_api_3_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_validation_jakarta_validation_api_3_1_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__jakarta_xml_bind_jakarta_xml_bind_api_4_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_bytebuddy_byte_buddy_1_15_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_i2p_crypto_eddsa_0_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_antlr_antlr4_runtime_4_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_client5_httpclient5_5_4_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_core5_httpcore5_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_core5_httpcore5_h2_5_3_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpclient_4_5_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_httpcomponents_httpcore_4_4_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_api_2_24_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_logging_log4j_log4j_to_slf4j_2_24_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_sshd_sshd_osgi_2_12_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_sshd_sshd_sftp_2_12_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_core_10_1_42.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_el_10_1_42.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_tomcat_embed_tomcat_embed_websocket_10_1_42.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_aspectj_aspectjweaver_1_9_24.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_bouncycastle_bcprov_jdk18on_1_78_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_checkerframework_checker_qual_3_49_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_angus_angus_activation_2_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jgit_org_eclipse_jgit_6_10_0_202406032230_r.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jgit_org_eclipse_jgit_http_apache_6_10_0_202406032230_r.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_eclipse_jgit_org_eclipse_jgit_ssh_apache_6_10_0_202406032230_r.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_jaxb_core_4_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_jaxb_runtime_4_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_glassfish_jaxb_txw2_4_0_5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_common_hibernate_commons_annotations_7_0_3_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_orm_hibernate_core_6_6_18_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hibernate_validator_hibernate_validator_8_0_2_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jboss_logging_jboss_logging_3_6_1_Final.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_23_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_reflect_1_9_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_9_25.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_core_jvm_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_reactive_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlinx_kotlinx_coroutines_reactor_1_8_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_postgresql_postgresql_42_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_reactivestreams_reactive_streams_1_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jcl_over_slf4j_2_0_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_jul_to_slf4j_2_0_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_2_0_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_autoconfigure_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_data_jpa_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_jdbc_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_json_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_logging_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_reactor_netty_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_tomcat_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_validation_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_web_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_boot_spring_boot_starter_webflux_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_commons_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_config_client_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_config_server_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_context_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_gateway_server_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_openfeign_core_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_config_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_gateway_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_cloud_spring_cloud_starter_openfeign_4_2_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_commons_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_data_spring_data_jpa_3_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_security_spring_security_crypto_6_4_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aop_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_aspects_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_beans_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_context_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_core_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_expression_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jcl_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_jdbc_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_orm_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_tx_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_web_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webflux_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_springframework_spring_webmvc_6_2_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_yaml_snakeyaml_2_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/config/threads_backend.config.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/config/threads_backend.config.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/config/threads_backend.config.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/gateway/threads_backend.gateway.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/gateway/threads_backend.gateway.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/gateway/threads_backend.gateway.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/media.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/reaction.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/thread/threads_backend.thread.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/thread/threads_backend.thread.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/thread/threads_backend.thread.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/threads_backend.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/user/threads_backend.user.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/user/threads_backend.user.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/user/threads_backend.user.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/uz.media.main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/uz.media.test.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/uz.reaction.main.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/resources/config/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/config/application-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/resources/config/gateway-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/config/gateway-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/resources/config/user-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/config/follow-local.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/kotlin/uz/gateway/Constants.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/kotlin/uz/gateway/Constants.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/kotlin/uz/gateway/Extensions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/kotlin/uz/gateway/Extensions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/kotlin/uz/gateway/Services.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/kotlin/uz/gateway/Services.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/media/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/src/main/kotlin/uz/media/Config.kt" beforeDir="false" afterPath="$PROJECT_DIR$/media/src/main/kotlin/uz/media/Config.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/src/main/kotlin/uz/media/Controller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/media/src/main/kotlin/uz/media/Controller.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/src/main/kotlin/uz/media/DTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/media/src/main/kotlin/uz/media/DTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reaction/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/reaction/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reaction/src/main/kotlin/uz/reaction/Config.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reaction/src/main/kotlin/uz/reaction/Config.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reaction/src/main/kotlin/uz/reaction/Controller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reaction/src/main/kotlin/uz/reaction/Controller.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reaction/src/main/kotlin/uz/reaction/DTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/reaction/src/main/kotlin/uz/reaction/DTO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thread/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/thread/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/controllers/UserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/controllers/UserController.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/Clients.kt" beforeDir="false" afterPath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/Clients.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/Config.kt" beforeDir="false" afterPath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/Config.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/Controller.kt" beforeDir="false" afterPath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/Controller.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/DTO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/DTO.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/Service.kt" beforeDir="false" afterPath="$PROJECT_DIR$/thread/src/main/kotlin/uz/thread/Service.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Config.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Controller.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/DTO.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Entity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/Entity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Enum.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Exception.kt" beforeDir="false" afterPath="$PROJECT_DIR$/follow/src/main/kotlin/uz/follow/Exception.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Repository.kt" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/kotlin/uz/zero/auth/repositories/BaseRepository.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/Service.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/kotlin/uz/user/UserApplication.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/follow/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/error.properties" beforeDir="false" afterPath="$PROJECT_DIR$/auth/src/main/resources/error.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/test/kotlin/uz/user/UserApplicationTests.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -460,7 +181,7 @@
       </map>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FollowApplication">
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
     <configuration name="AuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="auth.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="uz.zero.AuthApplication" />
@@ -542,7 +263,7 @@
       <workItem from="1769546524108" duration="494000" />
       <workItem from="1769554983991" duration="7756000" />
       <workItem from="1769589869711" duration="57824000" />
-      <workItem from="1770007467217" duration="2441000" />
+      <workItem from="1770007467217" duration="6014000" />
     </task>
     <task id="LOCAL-00001" summary="fixed">
       <option name="closed" value="true" />
@@ -552,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1769728117993</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed">
+      <option name="closed" value="true" />
+      <created>1770010032889</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770010032889</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
