@@ -1,5 +1,6 @@
 package uz.media
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import org.springframework.core.io.Resource
 import org.springframework.web.multipart.MultipartFile
 
@@ -34,4 +35,12 @@ data class MediaDownloadResponse(
     val resource: Resource,
     val fileName: String,
     val contentType: String?
+)
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+data class UserInfoResponse(
+    val id: Long,
+    val fullName: String,
+    val username: String,
+    val role: String,
 )

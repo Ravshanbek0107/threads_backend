@@ -1,5 +1,7 @@
 package uz.reaction
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
+
 
 data class BaseMessage(val code: Int? = null, val message: String? = null) {
     companion object {
@@ -24,3 +26,10 @@ data class LikeRequest(
     val userId: Long
 )
 
+@JsonIgnoreProperties(ignoreUnknown = true)
+data class UserInfoResponse(
+    val id: Long,
+    val fullName: String,
+    val username: String,
+    val role: String,
+)

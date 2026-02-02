@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-@RequestMapping("/api/v1/thread")
+@RequestMapping
 class ThreadController(
     private val threadService: ThreadService
 ) {
 
-    @PostMapping
+    @PostMapping("/post")
     fun create(@RequestBody request: ThreadCreateRequest): ThreadResponse {
         return threadService.create(request)
     }
@@ -34,7 +34,7 @@ class ThreadController(
         return threadService.getUserThreads(userId, pageable)
     }
 
-    @GetMapping
+    @GetMapping("/get-all")
     fun getAll(pageable: Pageable): Page<ThreadResponse> {
         return threadService.getAllThreads(pageable)
     }

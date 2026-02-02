@@ -2,8 +2,13 @@ package uz.gateway
 
 import com.fasterxml.jackson.core.type.TypeReference
 import com.fasterxml.jackson.databind.ObjectMapper
+import java.io.ByteArrayInputStream
+import java.io.ByteArrayOutputStream
 import java.lang.Exception
 import java.lang.IllegalArgumentException
+import java.util.Base64
+import java.util.zip.GZIPInputStream
+import java.util.zip.GZIPOutputStream
 
 fun ObjectMapper.parseMap(data: String?): Map<String, Any?> {
     try {
@@ -23,4 +28,11 @@ fun String.extractServiceName(): String? {
 
 fun <T> Class<T>.getIsRoutedKey(): String {
     return "${this.name}.entered"
+}
+
+
+fun String.compress(): String {
+    val bos = ByteArrayOutputStream()
+    GZIPOutputStream(bos).bufferedWriter(Charsets.UTF_8).use { it.write(this) }
+    return Base64.getEncoder().encodeToString(bos.toByteArray())
 }

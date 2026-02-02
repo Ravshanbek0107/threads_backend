@@ -1,5 +1,6 @@
 package uz.thread
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import java.util.Date
 
 
@@ -10,7 +11,6 @@ data class BaseMessage(val code: Int? = null, val message: String? = null) {
 }
 
 data class ThreadCreateRequest(
-    val authorId: Long,
     val type: ThreadType,
     val parentThreadId: Long? = null,
     val content: String? = null,
@@ -48,6 +48,14 @@ data class UserDto(
 data class MediaAttachRequest(
     val ownerId: Long,
     val hashIds: List<Long>
+)
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+data class UserInfoResponse(
+    val id: Long,
+    val fullName: String,
+    val username: String,
+    val role: String,
 )
 
 

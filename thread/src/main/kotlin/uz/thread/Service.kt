@@ -32,7 +32,6 @@ class ThreadServiceImpl(
     @Transactional
     override fun create(request: ThreadCreateRequest): ThreadResponse {
 
-        userFeignClient.getUser(request.authorId)
 
         val parentThread = request.parentThreadId?.let {
             threadRepository.findByIdAndDeletedFalseAndStatus(it, ThreadStatus.ACTIVE)
@@ -40,11 +39,12 @@ class ThreadServiceImpl(
         }
 
         val thread = Thread(
-            authorId = request.authorId,
+            authorId = userId(),
             type = request.type,
             content = request.content,
             parentThread = parentThread
         )
+        println(userId())
 
         threadRepository.save(thread)
 
